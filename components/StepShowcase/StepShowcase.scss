@@ -1,0 +1,45 @@
+$color: #0080bb;
+
+.setps {
+  color: #ffffff;
+  position: relative;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin-top: -50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.step{
+  float: left;
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+        background-color: lighten($color, ($i - 1) * 5%);
+    }
+  }
+  & .identifier {
+    font-size: 32px;
+    margin-bottom: 10px;
+    line-height: 100%;
+  }
+  & .name{
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  & ul {
+    list-style: square outside;
+    margin: 0px;
+    padding-left: 19px;
+  }
+  padding: 50px 15px;
+  box-sizing: border-box;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  min-width: 33.3333333333%;
+  height: 200px;
+}

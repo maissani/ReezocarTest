@@ -1,0 +1,45 @@
+.header {
+  background: url("~/../static/img/headbanner.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 480px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 0;
+  }
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.showcase {
+  font-family: 'Source Sans Pro',sans-serif;
+  margin-top: 140px;
+  margin-left: 50px;
+  border-left: 5px solid #03a9f5;
+  color: #FFFFFF;
+  height: auto;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  line-height: 100%;
+  position: absolute;
+}
+
+.description {
+  max-width: 450px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+}
